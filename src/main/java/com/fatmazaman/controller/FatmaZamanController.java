@@ -66,6 +66,10 @@ public class FatmaZamanController {
 		}
 		return fatzamaninterfaces.newemployee(manager_name);
 		}
+	@ResponseBody
+	@RequestMapping(value = "/fatmazaman/manager_name", method = RequestMethod.PUT)
+	@ApiOperation(value = "Update Salary")
+	@ApiResponses(value = { 
 	@ApiResponses(value = { 
             @ApiResponse(code = 200, message = "Success", response = EmpDTO.class),
             @ApiResponse(code = 401, message = "Unauthorized"),
